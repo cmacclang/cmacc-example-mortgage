@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "fullAddress": {
+      "id": "/properties/firstName",
+      "type": "string"
+    },
+    "price": {
+      "id": "/properties/lastName",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fullName"
+  ],
+  "type": "object"
+}

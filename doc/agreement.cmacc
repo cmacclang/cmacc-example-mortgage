@@ -1,0 +1,12 @@
+$ party = [../schema/party.schema]
+$ property = [../schema/property.schema]
+$ transactions = [../schema/party.schema]
+$ mortage = [../function/mortage.js]
+
+# Mortage for my House
+
+This is a Mortage for {{party.fullName}}
+
+The location of the property: {{property.fullAddress}}
+
+For a total price of {{property.price}}

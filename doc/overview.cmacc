@@ -1,0 +1,10 @@
+$ property = [../schema/property.schema]
+$ transactions = [../schema/party.schema]
+$ mortage = [../function/mortage.js]
+$ repaid = mortage(transactions)
+
+# Mortgage for my House
+
+Total mortgage: {{property.price}}
+
+Total repaid on mortgage: {{repaid}}

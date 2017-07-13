@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "items": {
+    "id": "/items",
+    "properties": {
+      "amount": {
+        "id": "/items/properties/amount",
+        "type": "integer"
+      },
+      "date": {
+        "id": "/items/properties/date",
+        "type": "string"
+      }
+    },
+    "required": [
+      "date",
+      "amount"
+    ],
+    "type": "object"
+  },
+  "type": "array"
+}
