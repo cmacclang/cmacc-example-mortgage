@@ -1,9 +1,8 @@
-$ party = [../store/party.json]
 $ property = [../store/property.json]
 $ transactions = [../store/transactions.json]
 
 $ agreement = [./agreement.cmacc]
-$ agreement.party = party
+$ agreement.party = [../store/party.json]
 $ agreement.property = property
 $ agreement.transactions = [../store/transactions.json]
 

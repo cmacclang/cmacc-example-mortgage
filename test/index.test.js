@@ -14,7 +14,7 @@ describe('mortage', function () {
 
     return cmacc.compile(file)
       .then(ast => {
-        //console.log(JSON.stringify(ast, null, 2));
+        //assert.deepEqual(ast.agreement.party, {})
         return ast.agreement;
       })
       .then(cmacc.render)
@@ -22,11 +22,9 @@ describe('mortage', function () {
         return cmacc.remarkable.render(md);
       })
       .then(html => {
-        //console.log(html);
         const output = path.join(__dirname, '../test/agreement.html');
         const expect = fs.readFileSync(output).toString();
         assert.equal(html, expect);
-        //console.log(html);
       })
   });
 
@@ -37,7 +35,6 @@ describe('mortage', function () {
 
     return cmacc.compile(file)
       .then(ast => {
-        //console.log(JSON.stringify(ast, null, 2));
         return ast.overview;
       })
       .then(cmacc.render)
@@ -45,11 +42,9 @@ describe('mortage', function () {
         return cmacc.remarkable.render(md);
       })
       .then(html => {
-        //console.log(html);
         const output = path.join(__dirname, '../test/overview.html');
         const expect = fs.readFileSync(output).toString();
         assert.equal(html, expect);
-        //console.log(html);
       })
   });
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "test.js",
   "directories": {
-    "doc": "doc"
+    "cmacc-compiler": "cmacclang/cmacc-compiler#v2"
   },
   "scripts": {
     "test": "node_modules/mocha/bin/mocha test --recursive"
